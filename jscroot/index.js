@@ -11,9 +11,9 @@ import {runAfterHeader,runAfterContent,runAfterHashChange} from "./controller/ma
 
 
 //check cookie login
-if (getCookie("login") === "") {
-    redirect("https://pos.in.my.id/login");
-}
+// if (getCookie("login") === "") {
+//     redirect("https://pos.in.my.id/login");
+// }
 
 //adding CSS
 addCSS("https://unpkg.com/bulma@0.9.4/css/bulma.min.css");

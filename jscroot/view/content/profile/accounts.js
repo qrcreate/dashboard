@@ -12,17 +12,17 @@ export async function main(){
     onClick("buttonkirimaccount",actionfunctionname);
 }
 
-function actionfunctionname(){
-    let user={
-        email:getValue("email"),
-    };
-    if (getCookie("login")===""){
-        redirect("../");
-    }else{
-        postJSON(backend.user.data,"login",getCookie("login"),user,responseFunction);
-        hide("buttonkirimaccount");
-    }  
-}
+// function actionfunctionname(){
+//     let user={
+//         email:getValue("email"),
+//     };
+//     if (getCookie("login")===""){
+//         redirect("../");
+//     }else{
+//         postJSON(backend.user.data,"login",getCookie("login"),user,responseFunction);
+//         hide("buttonkirimaccount");
+//     }  
+// }
 
 function responseFunction(result){
     if(result.status === 200){
